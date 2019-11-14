@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+          <p:panel id="panel" header="TRANSACCIONALES">
+              <p:growl id="msgs" showDetail="true"/>
+                 <p:messages id="messages" />                
+                 <h:panelGrid columns="2"  cellpadding="5" styleClass="ui-grid">
+            
+                <p:outputLabel value="Empresa" for="emp" styleClass="requiredLbl"/>
+                <p:inputText id="emp" value="#{index.nombre}" >
+                </p:inputText>
+                 
+                <p:outputLabel value="Nombre" for="nombre" styleClass="requiredLbl"/>
+                <p:inputText id="nombre"  value="#{index.empresa}" >
+                </p:inputText>
+                    
+                <p:outputLabel value="Numero1" for="num" styleClass="requiredLbl"/>
+                <p:inputText id="num" value="#{index.numero1}" >
+                </p:inputText>
+                           
+                <p:outputLabel value="Numero2" for="num1" styleClass="requiredLbl"/>
+                <p:inputText id="num1" value="#{index.numero2}" >
+                </p:inputText>            
+                        
+                <p:outputLabel value="Numero3" for="num2" styleClass="requiredLbl"/>
+                <p:inputText id="num2" value="#{index.numero3}" >
+                </p:inputText>
+                
+                
+            </h:panelGrid>  
+            <h:panelGrid columns="6"  cellpadding="5" styleClass="ui-grid">
+                             
+                 <p:commandButton value="Exception1" action="#{index.agregar()}" update="@form" />
+                 <p:commandButton value="Exception1" action="#{index.agregar1()}" update="@form" />
+                 <p:commandButton value="Exception1" action="#{index.agregar2()}" update="@form" />
+                 <p:commandButton value="Exception1" action="#{index.agregar3()}" update="@form"/>
+                 <p:commandButton value="Exception1" action="#{index.agregar4()}" update="@form" />
+              </h:panelGrid> 
+       </p:panel>    
+       </h:form>
+    </h:body>
+</html>
+

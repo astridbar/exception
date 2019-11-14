@@ -1,0 +1,15 @@
+com\mycompany\entitys\persona.class
+com\mycompany\beasn\personaFacade.class
+com\mycompany\entitys\persona_.class
+com\mycompany\beasn\Transaccion.class
+com\mycompany\exception\Excepciones.class
+com\mycompany\exception\Exceptiondos.class
+universidad\NewSessionBean.class
+com\mycompany\beasn\AbstractFacade.class
+com\mycompany\entitys\empresa.class
+com\mycompany\beasn\empresaFacade.class
+com\mycompany\local\TransaccionLocal.class
+com\mycompany\entitys\empresa_.class
+com\mycompany\local\empresaFacadeLocal.class
+com\mycompany\local\personaFacadeLocal.class
+com\mycompany\exception\Eceptionuno.class
